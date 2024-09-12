@@ -42,6 +42,7 @@ class SingleCityPage extends StatelessWidget {
   }
 
   Padding _buildPost(Map data) {
+    print('data is: $data');
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Center(
@@ -55,6 +56,7 @@ class SingleCityPage extends StatelessWidget {
                 Text(data['sys']['country'].toString()),
               ],
             ),
+            SizedBox(height: 10),
             Text(
               'City: $cityId',
               style: TextStyle(
@@ -62,7 +64,7 @@ class SingleCityPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 8),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
